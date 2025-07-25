@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "titulo": "Matemáticas Discretas",
+    "descripcion": "Aprende lógica, conjuntos y estructuras discretas.",
+    "profesor": " Prof. Bertha Villegas"
+  },
+  {
+    "id": 2,
+    "titulo": "Programación Básica",
+    "descripcion": "Estructuras de control, variables y tipos de datos.",
+    "profesor": "Prof. Carlos Rodríguez"
+  },
+  {
+    "id": 3,
+    "titulo": "Inglés Técnico",
+    "descripcion": "Gramática, vocabulario y comprensión de lectura.",
+    "profesor": "Prof. Ana Gómez"
+  
+  }
+]

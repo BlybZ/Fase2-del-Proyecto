@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>EduConnect - Acceso</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Formulario de Registro -->
+<div class="container-form register">
+    <div class="information">
+        <div class="info-childs">
+            <h2>Bienvenido a EduConnect</h2>
+            <p>Si ya tienes una cuenta, inicia sesión con tus credenciales</p>
+            <input type="button" value="Iniciar sesión" id="sign-in">
+        </div>
+    </div>
+    <div class="form-information">
+        <div class="form-information-childs">
+            <h2>Crear Cuenta</h2>
+            <p>Regístrate para acceder a nuestros cursos</p>
+            <form class="form" id="register-form">
+                <label>
+                    <i class='bx bxs-user'></i>
+                    <input type="text" placeholder="Nombre completo" id="register-name" required>
+                </label>
+                <label>
+                    <i class='bx bxs-user-circle'></i>
+                    <input type="text" placeholder="Nombre de usuario" id="register-username" required>
+                </label>
+                <label>
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" placeholder="Contraseña" id="register-password" required>
+                </label>
+                <input type="submit" value="Registrarse">
+                <div id="register-message" class="message"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Formulario de Login -->
+<div class="container-form login hide">
+    <div class="information">
+        <div class="info-childs">
+            <h2>¡Bienvenido de vuelta!</h2>
+            <p>Si no tienes una cuenta, regístrate para acceder a nuestro catalogo de cursos</p>
+            <input type="button" value="Registrarse" id="sign-up">
+            <p style="margin-top: 20px; font-size: 0.9rem;">
+                Usuario por defecto:<br>
+                <strong>Estudiante_123</strong> / <strong>IALI-2015</strong>
+            </p>
+        </div>
+    </div>
+    <div class="form-information">
+        <div class="form-information-childs">
+            <h2>Iniciar Sesión</h2>
+            <p>Ingresa con tu usuario y contraseña</p>
+            <form class="form" id="login-form">
+                <label>
+                    <i class='bx bxs-user'></i>
+                    <input type="text" placeholder="Usuario" id="login-username" required>
+                </label>
+                <label>
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" placeholder="Contraseña" id="login-password" required>
+                </label>
+                <input type="submit" value="Iniciar Sesión">
+                <div id="login-message" class="message"></div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<script src="auth.js"></script>
+</body>
+</html>
